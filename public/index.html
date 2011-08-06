@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script> 
+<link type='text/css' rel='stylesheet' href='style.css'>
+<script>
+$(document).ready(function(){
+	$('#spinner').show();
+	$.ajax({
+		url: window.location + "raw",
+		success: function(data) {
+			$('#week').html(data);
+			$('#spinner').hide();
+		}
+	});
+});
+</script>
+</head>
+<body>
+	<div id='prefix'>
+		This is week
+	</div>
+	<div id='week'>
+		<div id="spinner" class="spinner">
+			<img id="img-spinner" src="spinner.gif" alt="Loading"/>
+		</div>
+	</div>
+</body>
+</html>
