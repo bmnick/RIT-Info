@@ -1,2 +1,2 @@
-requrie './driver'
+require './driver'
 run Sinatra::Application
