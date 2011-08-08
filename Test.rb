@@ -1,5 +1,5 @@
 require './DateGrabber'
-require 'Date'
+require 'date'
 
 fail = false
 def t(date, ans)

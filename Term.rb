@@ -1,4 +1,4 @@
-require 'Date'
+require 'date'
 require 'net/https'
 require 'uri'
 
