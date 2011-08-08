@@ -1,4 +1,4 @@
-require './dategrabber'
+require './DateGrabber'
 require 'sinatra'
 
 get '/raw' do
