@@ -9,3 +9,8 @@ get '/' do
 	file = File.open("./public/index.html")
 	file.read
 end
+
+get '/:name' do |n|
+	file = File.open("./public/#{n}")
+	file.read
+end
