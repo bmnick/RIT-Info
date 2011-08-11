@@ -5,8 +5,10 @@
 <script>
 $(document).ready(function(){
 	$('#spinner').show();
+	date = location.hash;
+	if(date != ""){ date = "/" + date; }
 	$.ajax({
-		url: window.location + "raw",
+		url: window.location + "raw" + date,
 		success: function(data) {
 			$('#week').html(data);
 			$('#spinner').hide();
